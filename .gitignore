@@ -1,0 +1,12 @@
+# Dependencies
+node_modules/
+/frontend/node_modules/
+/backend/node_modules/
+
+# Environment variables (security keys, DB passwords)
+.env
+backend/.env
+
+# System files
+.DS_Store
+Thumbs.db
