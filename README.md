@@ -47,44 +47,32 @@ Follow these steps to get a local copy up and running on your machine:
 ### Prerequites
 *   Node.js installed locally
 *   A MongoDB Atlas database instance setup
+alhost:5000
+## 🚀 Quick Start Guide
 
-### 1. Clone the Repository
-```bash
-git clone [https://github.com/Sahil-o9/student-management-system.git](https://github.com/Sahil-o9/student-management-system.git)
-cd student-management-system
-
-## 2. Backend Setup
-Navigate to the server folder:
-
-Bash
-cd backend  # or your respective server folder name
-Install backend dependencies:
-
-Bash
-npm install
-Create a .env file in the root of your backend folder and add your environment configurations:
-
-Code snippet
-PORT=5000
-MONGO_URI=your_mongodb_connection_string
-Start the backend development server:
-
-Bash
-npm run dev # or npm start
-###3. Frontend Setup
-Open a new terminal tab and navigate to the frontend folder:
-
-Bash
-cd frontend
-Install frontend dependencies:
-
-Bash
-npm install
-Create a .env file in the root of your frontend folder to link your deployed backend or local host:
-
-Code snippet
-VITE_API_URL=http://localhost:5000
+###1. Clone the Repository
+bash
+git clone [https://github.com/Sahil-o9/student-management-system.git](https://github.com/Sahil-o9/student-management-system.git) && cd student-management-system
 Spin up the Vite development server:
 
+###2. Backend Setup
 Bash
-npm run dev
+| # Navigate to backend and install dependencies
+cd backend && npm install
+
+# Create environment file
+echo "PORT=5000\nMONGO_URI=your_mongodb_connection_string" > .env
+
+# Start the server
+npm run dev |
+
+###3. Frontend Setup
+Bash
+| # Open a new terminal window, then navigate to frontend and install dependencies
+cd frontend && npm install
+
+# Create environment file
+echo "VITE_API_URL=http://localhost:5000" > .env
+
+# Spin up the application
+npm run dev |
